@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageView.ScaleType;
 
 import com.antonyt.coveredimageview.CoveredImageView;
 import com.antonyt.coveredimageview.R;
@@ -21,6 +22,7 @@ public class CoveredImageViewActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         final CoveredImageView image = (CoveredImageView) findViewById(R.id.image);
+        image.setScaleType(ScaleType.FIT_START);
         image.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
