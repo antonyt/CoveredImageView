@@ -1,0 +1,1 @@
+An ImageView that can slowly reveal its content by changing the clip bounds over a period of time.
